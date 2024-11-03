@@ -9,6 +9,44 @@
 /* Begin PBXBuildFile section */
 		0D7CF2E82CD6C1FF0071E8DC /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 0D7CF2E72CD6C1FF0071E8DC /* NVActivityIndicatorView */; };
 		0D7CF2F82CD6C27A0071E8DC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D7CF2F72CD6C27A0071E8DC /* SnapKit */; };
+		0DAC85F12CD76A6F00B24929 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC85AE2CD76A6F00B24929 /* LaunchScreen.storyboard */; };
+		0DAC85F22CD76A6F00B24929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAC85D52CD76A6F00B24929 /* Assets.xcassets */; };
+		0DAC85F42CD76A6F00B24929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85AC2CD76A6F00B24929 /* AppDelegate.swift */; };
+		0DAC85F52CD76A6F00B24929 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85AF2CD76A6F00B24929 /* SceneDelegate.swift */; };
+		0DAC85F62CD76A6F00B24929 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85B22CD76A6F00B24929 /* CoordinatorFactory.swift */; };
+		0DAC85F72CD76A6F00B24929 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85B32CD76A6F00B24929 /* CoordinatorFactoryProtocol.swift */; };
+		0DAC85F82CD76A6F00B24929 /* MainPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85B52CD76A6F00B24929 /* MainPageFactory.swift */; };
+		0DAC85F92CD76A6F00B24929 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85B72CD76A6F00B24929 /* ModulesFactory.swift */; };
+		0DAC85FA2CD76A6F00B24929 /* ModulesFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85B82CD76A6F00B24929 /* ModulesFactoryProtocol.swift */; };
+		0DAC85FB2CD76A6F00B24929 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85BB2CD76A6F00B24929 /* BaseNavigationController.swift */; };
+		0DAC85FC2CD76A6F00B24929 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85BC2CD76A6F00B24929 /* BaseViewController.swift */; };
+		0DAC85FD2CD76A6F00B24929 /* PickerDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85BE2CD76A6F00B24929 /* PickerDismissAnimator.swift */; };
+		0DAC85FE2CD76A6F00B24929 /* PickerPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85BF2CD76A6F00B24929 /* PickerPresentAnimator.swift */; };
+		0DAC85FF2CD76A6F00B24929 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C02CD76A6F00B24929 /* SwipeInteractionController.swift */; };
+		0DAC86002CD76A6F00B24929 /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C42CD76A6F00B24929 /* MainAssembly.swift */; };
+		0DAC86012CD76A6F00B24929 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C52CD76A6F00B24929 /* MainInteractor.swift */; };
+		0DAC86022CD76A6F00B24929 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C62CD76A6F00B24929 /* MainPresenter.swift */; };
+		0DAC86032CD76A6F00B24929 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C72CD76A6F00B24929 /* MainView.swift */; };
+		0DAC86042CD76A6F00B24929 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85C82CD76A6F00B24929 /* MainViewController.swift */; };
+		0DAC86052CD76A6F00B24929 /* MainPageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85CA2CD76A6F00B24929 /* MainPageAssembly.swift */; };
+		0DAC86062CD76A6F00B24929 /* MainPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85CB2CD76A6F00B24929 /* MainPageCoordinator.swift */; };
+		0DAC86072CD76A6F00B24929 /* MainPageCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85CC2CD76A6F00B24929 /* MainPageCoordinatorOutput.swift */; };
+		0DAC86082CD76A6F00B24929 /* MainPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85CD2CD76A6F00B24929 /* MainPagePresenter.swift */; };
+		0DAC86092CD76A6F00B24929 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85CE2CD76A6F00B24929 /* MainPageViewController.swift */; };
+		0DAC860A2CD76A6F00B24929 /* AppCoordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85D12CD76A6F00B24929 /* AppCoordinatable.swift */; };
+		0DAC860B2CD76A6F00B24929 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85D22CD76A6F00B24929 /* AppCoordinator.swift */; };
+		0DAC860C2CD76A6F00B24929 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85D82CD76A6F00B24929 /* BaseCoordinator.swift */; };
+		0DAC860D2CD76A6F00B24929 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85D92CD76A6F00B24929 /* Router.swift */; };
+		0DAC860E2CD76A6F00B24929 /* UIView+Ext+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85DB2CD76A6F00B24929 /* UIView+Ext+addSubviews.swift */; };
+		0DAC860F2CD76A6F00B24929 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85DE2CD76A6F00B24929 /* Blocks.swift */; };
+		0DAC86102CD76A6F00B24929 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E02CD76A6F00B24929 /* BaseViewProtocol.swift */; };
+		0DAC86112CD76A6F00B24929 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E12CD76A6F00B24929 /* Coordinatable.swift */; };
+		0DAC86122CD76A6F00B24929 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E22CD76A6F00B24929 /* Presentable.swift */; };
+		0DAC86132CD76A6F00B24929 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E32CD76A6F00B24929 /* Routable.swift */; };
+		0DAC86142CD76A6F00B24929 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E52CD76A6F00B24929 /* ActionButton.swift */; };
+		0DAC86152CD76A6F00B24929 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E62CD76A6F00B24929 /* BaseView.swift */; };
+		0DAC86162CD76A6F00B24929 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85E72CD76A6F00B24929 /* BlockingActivityIndicator.swift */; };
+		0DAC86172CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DAC85EB2CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,27 +71,49 @@
 		0D7CF2712CD69E270071E8DC /* Weather-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7CF27B2CD69E270071E8DC /* Weather-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weather-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7CF3632CD6FF0B0071E8DC /* Weather-UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Weather-UIKit.xcodeproj"; sourceTree = "<group>"; };
+		0DAC85AC2CD76A6F00B24929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0DAC85AD2CD76A6F00B24929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0DAC85AF2CD76A6F00B24929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0DAC85B22CD76A6F00B24929 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		0DAC85B32CD76A6F00B24929 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		0DAC85B52CD76A6F00B24929 /* MainPageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageFactory.swift; sourceTree = "<group>"; };
+		0DAC85B72CD76A6F00B24929 /* ModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		0DAC85B82CD76A6F00B24929 /* ModulesFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactoryProtocol.swift; sourceTree = "<group>"; };
+		0DAC85BB2CD76A6F00B24929 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0DAC85BC2CD76A6F00B24929 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0DAC85BE2CD76A6F00B24929 /* PickerDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDismissAnimator.swift; sourceTree = "<group>"; };
+		0DAC85BF2CD76A6F00B24929 /* PickerPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerPresentAnimator.swift; sourceTree = "<group>"; };
+		0DAC85C02CD76A6F00B24929 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
+		0DAC85C42CD76A6F00B24929 /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		0DAC85C52CD76A6F00B24929 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		0DAC85C62CD76A6F00B24929 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		0DAC85C72CD76A6F00B24929 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0DAC85C82CD76A6F00B24929 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0DAC85CA2CD76A6F00B24929 /* MainPageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageAssembly.swift; sourceTree = "<group>"; };
+		0DAC85CB2CD76A6F00B24929 /* MainPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinator.swift; sourceTree = "<group>"; };
+		0DAC85CC2CD76A6F00B24929 /* MainPageCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinatorOutput.swift; sourceTree = "<group>"; };
+		0DAC85CD2CD76A6F00B24929 /* MainPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPagePresenter.swift; sourceTree = "<group>"; };
+		0DAC85CE2CD76A6F00B24929 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		0DAC85D12CD76A6F00B24929 /* AppCoordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatable.swift; sourceTree = "<group>"; };
+		0DAC85D22CD76A6F00B24929 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0DAC85D52CD76A6F00B24929 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DAC85D62CD76A6F00B24929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAC85D82CD76A6F00B24929 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		0DAC85D92CD76A6F00B24929 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0DAC85DB2CD76A6F00B24929 /* UIView+Ext+addSubviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext+addSubviews.swift"; sourceTree = "<group>"; };
+		0DAC85DE2CD76A6F00B24929 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		0DAC85E02CD76A6F00B24929 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		0DAC85E12CD76A6F00B24929 /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		0DAC85E22CD76A6F00B24929 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		0DAC85E32CD76A6F00B24929 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		0DAC85E52CD76A6F00B24929 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		0DAC85E62CD76A6F00B24929 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0DAC85E72CD76A6F00B24929 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
+		0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Weather-UIKit.xcodeproj"; sourceTree = "<group>"; };
+		0DAC85F02CD76A6F00B24929 /* Weather_UIKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather_UIKit.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0D7CF2832CD69E270071E8DC /* Exceptions for "Weather-UIKit" folder in "Weather-UIKit" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Resources/Info.plist,
-			);
-			target = 0D7CF2572CD69E250071E8DC /* Weather-UIKit */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0D7CF25A2CD69E250071E8DC /* Weather-UIKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0D7CF2832CD69E270071E8DC /* Exceptions for "Weather-UIKit" folder in "Weather-UIKit" target */,
-			);
-			path = "Weather-UIKit";
-			sourceTree = "<group>";
-		};
 		0D7CF2742CD69E270071E8DC /* Weather-UIKitTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Weather-UIKitTests";
@@ -96,7 +156,7 @@
 		0D7CF24F2CD69E250071E8DC = {
 			isa = PBXGroup;
 			children = (
-				0D7CF25A2CD69E250071E8DC /* Weather-UIKit */,
+				0DAC85ED2CD76A6F00B24929 /* Weather-UIKit */,
 				0D7CF2742CD69E270071E8DC /* Weather-UIKitTests */,
 				0D7CF27E2CD69E270071E8DC /* Weather-UIKitUITests */,
 				0D7CF2592CD69E250071E8DC /* Products */,
@@ -120,6 +180,244 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0DAC85B02CD76A6F00B24929 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85AC2CD76A6F00B24929 /* AppDelegate.swift */,
+				0DAC85AE2CD76A6F00B24929 /* LaunchScreen.storyboard */,
+				0DAC85AF2CD76A6F00B24929 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0DAC85B42CD76A6F00B24929 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85B22CD76A6F00B24929 /* CoordinatorFactory.swift */,
+				0DAC85B32CD76A6F00B24929 /* CoordinatorFactoryProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0DAC85B62CD76A6F00B24929 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85B52CD76A6F00B24929 /* MainPageFactory.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		0DAC85B92CD76A6F00B24929 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85B62CD76A6F00B24929 /* Interfaces */,
+				0DAC85B72CD76A6F00B24929 /* ModulesFactory.swift */,
+				0DAC85B82CD76A6F00B24929 /* ModulesFactoryProtocol.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0DAC85BA2CD76A6F00B24929 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85B42CD76A6F00B24929 /* Coordinator */,
+				0DAC85B92CD76A6F00B24929 /* Modules */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		0DAC85BD2CD76A6F00B24929 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85BB2CD76A6F00B24929 /* BaseNavigationController.swift */,
+				0DAC85BC2CD76A6F00B24929 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0DAC85C12CD76A6F00B24929 /* InteractionController */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85BE2CD76A6F00B24929 /* PickerDismissAnimator.swift */,
+				0DAC85BF2CD76A6F00B24929 /* PickerPresentAnimator.swift */,
+				0DAC85C02CD76A6F00B24929 /* SwipeInteractionController.swift */,
+			);
+			path = InteractionController;
+			sourceTree = "<group>";
+		};
+		0DAC85C22CD76A6F00B24929 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85BD2CD76A6F00B24929 /* Base */,
+				0DAC85C12CD76A6F00B24929 /* InteractionController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0DAC85C32CD76A6F00B24929 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85C22CD76A6F00B24929 /* Controllers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0DAC85C92CD76A6F00B24929 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85C42CD76A6F00B24929 /* MainAssembly.swift */,
+				0DAC85C52CD76A6F00B24929 /* MainInteractor.swift */,
+				0DAC85C62CD76A6F00B24929 /* MainPresenter.swift */,
+				0DAC85C72CD76A6F00B24929 /* MainView.swift */,
+				0DAC85C82CD76A6F00B24929 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0DAC85CF2CD76A6F00B24929 /* MainPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85CA2CD76A6F00B24929 /* MainPageAssembly.swift */,
+				0DAC85CB2CD76A6F00B24929 /* MainPageCoordinator.swift */,
+				0DAC85CC2CD76A6F00B24929 /* MainPageCoordinatorOutput.swift */,
+				0DAC85CD2CD76A6F00B24929 /* MainPagePresenter.swift */,
+				0DAC85CE2CD76A6F00B24929 /* MainPageViewController.swift */,
+			);
+			path = MainPageViewController;
+			sourceTree = "<group>";
+		};
+		0DAC85D02CD76A6F00B24929 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85D22CD76A6F00B24929 /* AppCoordinator.swift */,
+				0DAC85D12CD76A6F00B24929 /* AppCoordinatable.swift */,
+				0DAC85C92CD76A6F00B24929 /* Main */,
+				0DAC85CF2CD76A6F00B24929 /* MainPageViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0DAC85D32CD76A6F00B24929 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85C32CD76A6F00B24929 /* Base */,
+				0DAC85D02CD76A6F00B24929 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		0DAC85D42CD76A6F00B24929 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85BA2CD76A6F00B24929 /* Factories */,
+				0DAC85D32CD76A6F00B24929 /* Flows */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0DAC85D72CD76A6F00B24929 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85D52CD76A6F00B24929 /* Assets.xcassets */,
+				0DAC85D62CD76A6F00B24929 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DAC85DA2CD76A6F00B24929 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85D82CD76A6F00B24929 /* BaseCoordinator.swift */,
+				0DAC85D92CD76A6F00B24929 /* Router.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0DAC85DC2CD76A6F00B24929 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85DB2CD76A6F00B24929 /* UIView+Ext+addSubviews.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		0DAC85DD2CD76A6F00B24929 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85DC2CD76A6F00B24929 /* UIView */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0DAC85DF2CD76A6F00B24929 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85DE2CD76A6F00B24929 /* Blocks.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0DAC85E42CD76A6F00B24929 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85E02CD76A6F00B24929 /* BaseViewProtocol.swift */,
+				0DAC85E12CD76A6F00B24929 /* Coordinatable.swift */,
+				0DAC85E22CD76A6F00B24929 /* Presentable.swift */,
+				0DAC85E32CD76A6F00B24929 /* Routable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0DAC85E82CD76A6F00B24929 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85E52CD76A6F00B24929 /* ActionButton.swift */,
+				0DAC85E62CD76A6F00B24929 /* BaseView.swift */,
+				0DAC85E72CD76A6F00B24929 /* BlockingActivityIndicator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0DAC85E92CD76A6F00B24929 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85E82CD76A6F00B24929 /* Base */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0DAC85EA2CD76A6F00B24929 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85DA2CD76A6F00B24929 /* Base */,
+				0DAC85DD2CD76A6F00B24929 /* Extension */,
+				0DAC85DF2CD76A6F00B24929 /* Helpers */,
+				0DAC85E42CD76A6F00B24929 /* Protocol */,
+				0DAC85E92CD76A6F00B24929 /* UIKit */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0DAC85ED2CD76A6F00B24929 /* Weather-UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0DAC85B02CD76A6F00B24929 /* Application */,
+				0DAC85D42CD76A6F00B24929 /* Presentation */,
+				0DAC85D72CD76A6F00B24929 /* Resources */,
+				0DAC85EA2CD76A6F00B24929 /* Source */,
+				0DAC85EB2CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld */,
+				0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */,
+			);
+			path = "Weather-UIKit";
+			sourceTree = "<group>";
+		};
+		0DAC85EE2CD76A6F00B24929 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +432,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				0D7CF25A2CD69E250071E8DC /* Weather-UIKit */,
 			);
 			name = "Weather-UIKit";
 			packageProductDependencies = (
@@ -237,6 +532,10 @@
 					ProductGroup = 0D7CF3642CD6FF0B0071E8DC /* Products */;
 					ProjectRef = 0D7CF3632CD6FF0B0071E8DC /* Weather-UIKit.xcodeproj */;
 				},
+				{
+					ProductGroup = 0DAC85EE2CD76A6F00B24929 /* Products */;
+					ProjectRef = 0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -252,6 +551,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAC85F12CD76A6F00B24929 /* LaunchScreen.storyboard in Resources */,
+				0DAC85F22CD76A6F00B24929 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +577,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DAC85F42CD76A6F00B24929 /* AppDelegate.swift in Sources */,
+				0DAC85F52CD76A6F00B24929 /* SceneDelegate.swift in Sources */,
+				0DAC85F62CD76A6F00B24929 /* CoordinatorFactory.swift in Sources */,
+				0DAC85F72CD76A6F00B24929 /* CoordinatorFactoryProtocol.swift in Sources */,
+				0DAC85F82CD76A6F00B24929 /* MainPageFactory.swift in Sources */,
+				0DAC85F92CD76A6F00B24929 /* ModulesFactory.swift in Sources */,
+				0DAC85FA2CD76A6F00B24929 /* ModulesFactoryProtocol.swift in Sources */,
+				0DAC85FB2CD76A6F00B24929 /* BaseNavigationController.swift in Sources */,
+				0DAC85FC2CD76A6F00B24929 /* BaseViewController.swift in Sources */,
+				0DAC85FD2CD76A6F00B24929 /* PickerDismissAnimator.swift in Sources */,
+				0DAC85FE2CD76A6F00B24929 /* PickerPresentAnimator.swift in Sources */,
+				0DAC85FF2CD76A6F00B24929 /* SwipeInteractionController.swift in Sources */,
+				0DAC86002CD76A6F00B24929 /* MainAssembly.swift in Sources */,
+				0DAC86012CD76A6F00B24929 /* MainInteractor.swift in Sources */,
+				0DAC86022CD76A6F00B24929 /* MainPresenter.swift in Sources */,
+				0DAC86032CD76A6F00B24929 /* MainView.swift in Sources */,
+				0DAC86042CD76A6F00B24929 /* MainViewController.swift in Sources */,
+				0DAC86052CD76A6F00B24929 /* MainPageAssembly.swift in Sources */,
+				0DAC86062CD76A6F00B24929 /* MainPageCoordinator.swift in Sources */,
+				0DAC86072CD76A6F00B24929 /* MainPageCoordinatorOutput.swift in Sources */,
+				0DAC86082CD76A6F00B24929 /* MainPagePresenter.swift in Sources */,
+				0DAC86092CD76A6F00B24929 /* MainPageViewController.swift in Sources */,
+				0DAC860A2CD76A6F00B24929 /* AppCoordinatable.swift in Sources */,
+				0DAC860B2CD76A6F00B24929 /* AppCoordinator.swift in Sources */,
+				0DAC860C2CD76A6F00B24929 /* BaseCoordinator.swift in Sources */,
+				0DAC860D2CD76A6F00B24929 /* Router.swift in Sources */,
+				0DAC860E2CD76A6F00B24929 /* UIView+Ext+addSubviews.swift in Sources */,
+				0DAC860F2CD76A6F00B24929 /* Blocks.swift in Sources */,
+				0DAC86102CD76A6F00B24929 /* BaseViewProtocol.swift in Sources */,
+				0DAC86112CD76A6F00B24929 /* Coordinatable.swift in Sources */,
+				0DAC86122CD76A6F00B24929 /* Presentable.swift in Sources */,
+				0DAC86132CD76A6F00B24929 /* Routable.swift in Sources */,
+				0DAC86142CD76A6F00B24929 /* ActionButton.swift in Sources */,
+				0DAC86152CD76A6F00B24929 /* BaseView.swift in Sources */,
+				0DAC86162CD76A6F00B24929 /* BlockingActivityIndicator.swift in Sources */,
+				0DAC86172CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +644,17 @@
 			targetProxy = 0D7CF27C2CD69E270071E8DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0DAC85AE2CD76A6F00B24929 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DAC85AD2CD76A6F00B24929 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0D7CF2852CD69E270071E8DC /* Debug */ = {
@@ -634,6 +982,19 @@
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0DAC85EB2CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0DAC85F02CD76A6F00B24929 /* Weather_UIKit.xcdatamodel */,
+			);
+			currentVersion = 0DAC85F02CD76A6F00B24929 /* Weather_UIKit.xcdatamodel */;
+			path = Weather_UIKit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D7CF2502CD69E250071E8DC /* Project object */;
 }
