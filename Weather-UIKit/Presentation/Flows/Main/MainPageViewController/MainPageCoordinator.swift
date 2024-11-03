@@ -46,8 +46,7 @@ private extension MainPageCoordinator {
         let view = factory.makeMainPageView(
             input: .init(
                 views: [
-                    performCurrentFlow(),
-                    performCurrentFlow()
+                    performCurrentFlow(.init())
                 ].compactMap { $0 }
             )
         )
@@ -56,8 +55,9 @@ private extension MainPageCoordinator {
     }
 
     /// Создает текущий модуль для отображения.
-    func performCurrentFlow() -> UIViewController? {
-        let view = factory.makeMainView()
+    /// - Parameter input: Входящий параметр для `MainPresenter`
+    func performCurrentFlow(_ input: MainPresenter.Input) -> UIViewController? {
+        let view = factory.makeMainView(input)
         return view.toPresent
     }
 }

@@ -19,7 +19,7 @@ class MainViewController: ViewController<MainView>, MainAssemblable {
     // Dependency
     var presenter: MainPresenterInput?
 
-    // MARK: - Жизненные циклы
+    // MARK: - LifeCycles
     override func loadView() {
         super.loadView()
 
@@ -38,7 +38,7 @@ class MainViewController: ViewController<MainView>, MainAssemblable {
         print("MainViewController is deinit")
     }
 
-    // MARK: - Приватные методы
+    // MARK: - Private methods
 }
 
 // MARK: - MainPresenterOutput

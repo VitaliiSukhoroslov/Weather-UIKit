@@ -19,16 +19,17 @@ extension ModulesFactory {
     /// - Parameter input: Входные данные для `MainPagePresenter`, используемого в представлении.
     /// - Returns: Объект, реализующий протокол `MainPageViewProtocol`, настроенный для использования с данным `input`.
     func makeMainPageView(input: MainPagePresenter.Input) -> MainPageViewProtocol {
-        let view = MainPageViewController() // Создаем новый экземпляр MainPageViewController.
-        MainPageAssembly.assembly(with: view, input: input) // Настраиваем представление с помощью MainPageAssembly.
-        return view // Возвращаем настроенное представление.
+        let view = MainPageViewController()
+        MainPageAssembly.assembly(with: view, input: input)
+        return view
     }
 
     /// Создает и настраивает главное представление `MainView`.
+    /// - Parameter input: Входящий параметр для презентора
     /// - Returns: Объект, реализующий протокол `MainViewProtocol`, настроенный для использования в приложении.
-    func makeMainView() -> MainViewProtocol {
-        let view = MainViewController() // Создаем новый экземпляр MainViewController.
-        MainAssembly.assembly(with: view) // Настраиваем представление с помощью MainAssembly.
-        return view // Возвращаем настроенное представление.
+    func makeMainView(_ input: MainPresenter.Input) -> MainViewProtocol {
+        let view = MainViewController()
+        MainAssembly.assembly(with: view, input: input)
+        return view
     }
 }

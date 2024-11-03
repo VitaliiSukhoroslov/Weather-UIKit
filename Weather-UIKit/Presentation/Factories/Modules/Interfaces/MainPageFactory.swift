@@ -15,6 +15,7 @@ protocol MainPageFactory {
     func makeMainPageView(input: MainPagePresenter.Input) -> MainPageViewProtocol
 
     /// Создает и возвращает основное представление `MainView`
+    /// - Parameter input: Входящий параметр для презентора
     /// - Returns: Объект, реализующий `MainViewProtocol`
-    func makeMainView() -> MainViewProtocol
+    func makeMainView(_ input: MainPresenter.Input) -> MainViewProtocol
 }

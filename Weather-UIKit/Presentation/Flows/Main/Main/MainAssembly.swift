@@ -15,12 +15,15 @@ protocol MainAssemblable: MainViewProtocol, MainPresenterOutput { }
 enum MainAssembly {
 
     /// Создает и связывает экземпляры всех компонентов для модуля "Main".
-    /// - Parameter output: Объект, реализующий интерфейс `MainPresenterOutput`, который будет получать данные от презентера.
+    /// - Parameters:
+    ///  - output: Объект, реализующий интерфейс `MainPresenterOutput`, который будет получать данные от презентера.
+    ///  - input: Входящий параметр для презентора
     static func assembly(
-        with output: MainPresenterOutput
+        with output: MainPresenterOutput,
+        input: MainPresenter.Input
     ) {
         let interactor = MainInteractor()
-        let presenter = MainPresenter()
+        let presenter = MainPresenter(input)
 
         interactor.presenter = presenter
         presenter.interactor = interactor

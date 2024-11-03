@@ -109,7 +109,6 @@
 		0DAC85E52CD76A6F00B24929 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		0DAC85E62CD76A6F00B24929 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0DAC85E72CD76A6F00B24929 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
-		0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Weather-UIKit.xcodeproj"; sourceTree = "<group>"; };
 		0DAC85F02CD76A6F00B24929 /* Weather_UIKit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Weather_UIKit.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -406,16 +405,8 @@
 				0DAC85D72CD76A6F00B24929 /* Resources */,
 				0DAC85EA2CD76A6F00B24929 /* Source */,
 				0DAC85EB2CD76A6F00B24929 /* Weather_UIKit.xcdatamodeld */,
-				0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */,
 			);
 			path = "Weather-UIKit";
-			sourceTree = "<group>";
-		};
-		0DAC85EE2CD76A6F00B24929 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,10 +522,6 @@
 				{
 					ProductGroup = 0D7CF3642CD6FF0B0071E8DC /* Products */;
 					ProjectRef = 0D7CF3632CD6FF0B0071E8DC /* Weather-UIKit.xcodeproj */;
-				},
-				{
-					ProductGroup = 0DAC85EE2CD76A6F00B24929 /* Products */;
-					ProjectRef = 0DAC85EC2CD76A6F00B24929 /* Weather-UIKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
