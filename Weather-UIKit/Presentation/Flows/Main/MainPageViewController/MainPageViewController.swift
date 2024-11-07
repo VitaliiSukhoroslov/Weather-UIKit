@@ -23,6 +23,19 @@ class MainPageViewController: UIPageViewController, MainPageAssemblable {
     // MARK: - State
     private var pages: [UIViewController] = []
 
+    // MARK: - UI
+    private let backgroundImageView: UIImageView = {
+        let view = UIImageView(image: .launchScreen)
+        view.contentMode = .scaleAspectFill
+        return view
+    }()
+
+    private let mainBackgroundView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black.withAlphaComponent(0.75)
+        return view
+    }()
+
     // MARK: - Initialization
 
     /// Инициализация контроллера с заданным стилем и ориентацией.
@@ -41,6 +54,19 @@ class MainPageViewController: UIPageViewController, MainPageAssemblable {
     }
 
     // MARK: - Lifecycle
+
+    override func loadView() {
+        super.loadView()
+
+        view.insertSubview(mainBackgroundView, at: 0)
+        mainBackgroundView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        view.insertSubview(backgroundImageView, at: 0)
+        backgroundImageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,10 +106,12 @@ extension MainPageViewController {
 
 extension MainPageViewController: UIPageViewControllerDelegate {
     /// Метод, вызываемый после завершения анимации перехода между страницами.
-    func pageViewController(_ pageViewController: UIPageViewController,
-                            didFinishAnimating finished: Bool,
-                            previousViewControllers: [UIViewController],
-                            transitionCompleted completed: Bool) {
+    func pageViewController(
+        _ pageViewController: UIPageViewController,
+        didFinishAnimating finished: Bool,
+        previousViewControllers: [UIViewController],
+        transitionCompleted completed: Bool
+    ) {
 
         guard completed, let visibleViewController = viewControllers?.first,
               let index = pages.firstIndex(of: visibleViewController) else { return }

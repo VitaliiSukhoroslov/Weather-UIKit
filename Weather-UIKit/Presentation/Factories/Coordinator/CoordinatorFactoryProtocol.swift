@@ -19,4 +19,13 @@ protocol CoordinatorFactoryProtocol {
         router: Routable,
         coordinatorFactory: CoordinatorFactoryProtocol
     ) -> MainPageCoordinator & MainPageCoordinatorOutput
+
+    /// Создает и возвращает координатор для `NoAccessPersonalDataViewController`
+    /// - Parameters:
+    ///   - router: Объект для навигации, отвечающий за маршрутизацию.
+    ///   - coordinatorFactory: Фабрика координаторов для создания вложенных координаторов.
+    /// - Returns: Возвращает экземпляр `NoAccessPersonalDataCoordinator`, который также поддерживает `NoAccessPersonalDataCoordinatorOutput`.
+    func makeNoAccessPersonalDataCoordinator(
+        router: Routable
+    ) -> NoAccessPersonalDataCoordinator & NoAccessPersonalDataCoordinatorOutput
 }

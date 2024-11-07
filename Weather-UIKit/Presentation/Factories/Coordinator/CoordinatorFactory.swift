@@ -31,6 +31,19 @@ extension CoordinatorFactory: CoordinatorFactoryProtocol {
             router: router
         )
     }
+
+    /// Метод для создания координатора модального экрана ошибки предоставления персональных данных.
+    /// - Parameters:
+    ///   - router: Объект, реализующий протокол `Routable`, используемый для навигации.
+    /// - Returns: Объект типа `NoAccessPersonalDataCoordinator`, который соответствует протоколам `NoAccessPersonalDataCoordinator` и `NoAccessPersonalDataCoordinatorOutput`.
+    func makeNoAccessPersonalDataCoordinator(
+        router: Routable
+    ) -> NoAccessPersonalDataCoordinator & NoAccessPersonalDataCoordinatorOutput {
+        NoAccessPersonalDataCoordinator(
+            with: modulesFactory,
+            router: router
+        )
+    }
 }
 
 // MARK: - Private Methods

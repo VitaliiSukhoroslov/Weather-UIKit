@@ -54,10 +54,37 @@ private extension MainPageCoordinator {
         router.setRootModule(view, hideNavigationBar: false, rootAnimated: true)
     }
 
-    /// Создает текущий модуль для отображения.
+    /// Создает модул `NoAccessPersonalData` для отображения.
     /// - Parameter input: Входящий параметр для `MainPresenter`
     func performCurrentFlow(_ input: MainPresenter.Input) -> UIViewController? {
         let view = factory.makeMainView(input)
+
+        view.onNotAccessPersonalData = { [weak self] in
+            self?.performNoAccessPersonalDataCoordinator($0.input, $0.completion)
+        }
         return view.toPresent
+    }
+
+    /// Создает текущий модуль для отображения.
+    /// - Parameters:
+    ///  - input: Входящий параметр для `NoAccessPersonalDataCoordinator`
+    ///  - completion: Обратная связь после закрытия экрана
+    func performNoAccessPersonalDataCoordinator(
+        _ input: NoAccessPersonalDataPresenter.Input,
+        _ completion: CompletionBlock?
+    ) {
+        let coordinator = coordinatorFactory.makeNoAccessPersonalDataCoordinator(
+            router: router
+        )
+
+        coordinator.finishFlow = { [weak self, weak coordinator] in
+            guard let self else { return }
+
+            removeDependency(coordinator)
+            completion?()
+        }
+
+        coordinator.start(input)
+        addDependency(coordinator)
     }
 }

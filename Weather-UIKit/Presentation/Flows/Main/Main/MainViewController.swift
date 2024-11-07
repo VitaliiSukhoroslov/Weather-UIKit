@@ -9,14 +9,20 @@
 import UIKit
 
 /**
- Main прогноз погоды для города
+ Основное представление, отображающее прогноз погоды для города.
  */
 class MainViewController: ViewController<MainView>, MainAssemblable {
 
-    // Navigation
-    var onCompletion: CompletionBlock?
+    // MARK: - Properties
 
-    // Dependency
+    // Блоки для обработки завершения работы и отсутствия доступа к данным
+    var onCompletion: CompletionBlock?
+    var onNotAccessPersonalData: CompletionResult<(
+        input: NoAccessPersonalDataPresenter.Input,
+        completion: CompletionBlock?
+    )>?
+
+    // Зависимость от презентера
     var presenter: MainPresenterInput?
 
     // MARK: - LifeCycles
@@ -26,26 +32,30 @@ class MainViewController: ViewController<MainView>, MainAssemblable {
         mainView.presenter = presenter
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        presenter?.onStart()
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         navigationController?.setNavigationBarHidden(true, animated: false)
-
-        presenter?.onStart()
     }
 
     deinit {
         print("MainViewController is deinit")
     }
-
-    // MARK: - Private methods
 }
 
 // MARK: - MainPresenterOutput
 
 extension MainViewController {
-    /// Метод для подготовки данных в представлении.
-    func prepareData() {
-        mainView.configure()
+
+     /// Метод для подготовки данных для отображения на представлении.
+     /// - parameter input: Входные данные для представления.
+    func prepareData(_ input: MainViewDataSourceInput) {
+        mainView.configure(input)
     }
 }

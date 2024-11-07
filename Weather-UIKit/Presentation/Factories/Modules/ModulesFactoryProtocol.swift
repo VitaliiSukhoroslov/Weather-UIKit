@@ -6,4 +6,4 @@
 //
 
 // ModulesFactoryProtocol объединяет все фабрики
-protocol ModulesFactoryProtocol: MainPageFactory {}
+protocol ModulesFactoryProtocol: MainPageFactory, NoAccessPersonalDataFactory {}

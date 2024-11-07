@@ -32,4 +32,18 @@ extension ModulesFactory {
         MainAssembly.assembly(with: view, input: input)
         return view
     }
+
+    /// Создает и настраивает главное представление `NoAccessPersonalData`.
+    /// - Parameter input: Входящий параметр для презентора
+    /// - Returns: Объект, реализующий протокол `NoAccessPersonalDataProtocol`, настроенный для использования в приложении.
+    func makeNoAccessPersonalDataView(
+        input: NoAccessPersonalDataPresenter.Input
+    ) -> NoAccessPersonalDataViewProtocol {
+        let view = NoAccessPersonalDataViewController()
+        NoAccessPersonalDataAssembly.assembly(
+            with: view,
+            input: input
+        )
+        return view
+    }
 }

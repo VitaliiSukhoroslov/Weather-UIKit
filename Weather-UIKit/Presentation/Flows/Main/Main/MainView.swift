@@ -14,34 +14,37 @@ final class MainView: BaseView {
 
     // State
     var presenter: MainPresenterInput?
+    private lazy var dataSource = MainViewDataSource(tableView: tableView)
 
     /// Конфигурирует представление.
-    func configure() {
-        // Здесь можно обновить данные в представлении, используя информацию от презентера.
+    func configure(_ input: MainViewDataSourceInput) {
+        dataSource.prepareData(input)
     }
 
     // UI
-    private let testLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Main Screen"
-        label.textColor = .black
-        return label
+    private lazy var tableView: UITableView = {
+        let view = UITableView(frame: .zero, style: .plain)
+        view.separatorStyle = .none
+        view.rowHeight = UITableView.automaticDimension
+        view.backgroundColor = .clear
+        view.contentInset = .init(top: 40, left: 0, bottom: 0, right: 0)
+        return view
     }()
 
     /// Инициализация пользовательского интерфейса.
     override func initUI() {
-        addSubviews(testLabel)
+        addSubviews(tableView)
     }
 
     /// Установка ограничений для пользовательского интерфейса.
     override func initConstraints() {
-        testLabel.snp.makeConstraints {
-            $0.center.equalToSuperview()
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
         }
     }
 
     /// Инициализация слушателей событий.
     override func initListeners() {
-        backgroundColor = .red
+        backgroundColor = .clear
     }
 }

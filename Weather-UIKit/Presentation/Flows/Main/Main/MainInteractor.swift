@@ -13,14 +13,25 @@ final class MainInteractor {
 
     unowned var presenter: MainPresenter?
 
-    // Пример использования APIWrapper для выполнения сетевых запросов.
-    // private let apiWrapper: APIWrapperProtocol = APIWrapper()
+    private let apiServiceWeather: APIServiceWeatherProtocol = APIServiceWeather()
 
     // TODO: Реализуйте методы использования
 }
 
 // MARK: - Интерфейс интерактора
 extension MainInteractor {
-    // Здесь можно добавить методы интерфейса для взаимодействия с презентером,
-    // которые будут использоваться для выполнения бизнес-логики и обработки данных.
+    func getWeatherCurrentLocation(request: LocationCoordinateRequest) {
+        apiServiceWeather.getWeatherLocationCoordinate(
+            request: request
+        ) { [weak self] result in
+            guard let self else { return }
+
+            switch result {
+            case .success(let response):
+                presenter?.onSuccess(weater: response)
+            case .failure:
+                presenter?.onFailure()
+            }
+        }
+    }
 }
